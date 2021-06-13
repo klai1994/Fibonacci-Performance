@@ -22,20 +22,20 @@ public class Main {
 		for (int i = 0; i <= terms; i++) {	
 			
 			startTime = System.nanoTime();
-			fibonnaciIterative(i);
+			fibonacciIterative(i);
 			endTime = System.nanoTime();
 			totalTime = endTime - startTime;		
 			iterativeTimes.add(totalTime);
 			System.out.println("Iterative result for " + i + " terms: "  + totalTime);
 	
 			startTime = System.nanoTime();
-			fibonnaciRecursive(i);
+			fibonacciRecursive(i);
 			endTime = System.nanoTime();
 			totalTime = endTime - startTime;
 			recursiveTimes.add(totalTime);
 			System.out.println("Recursive result for " + i + " terms: "  + totalTime);
 			
-			results.add(fibonnaciIterative(i));
+			results.add(fibonacciIterative(i));
 			
 		}
 		recordData(iterativeTimes, recursiveTimes, results);
@@ -62,7 +62,7 @@ public class Main {
 		
 	}
 	
-	static int fibonnaciIterative(int n) {
+	static int fibonacciIterative(int n) {
 
 		if (n == 0 || n == 1)
 			return n;
@@ -77,11 +77,11 @@ public class Main {
 		return result;
 	}
 
-	static int fibonnaciRecursive(int n) {
+	static int fibonacciRecursive(int n) {
 
 		if (n == 0 || n == 1)
 			return n;
-		return fibonnaciRecursive(n - 1) + fibonnaciRecursive(n - 2);
+		return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 
 	}
 
