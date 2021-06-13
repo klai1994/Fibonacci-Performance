@@ -2,43 +2,43 @@ Summary (total terms: 20)
 -----
 Number of terms: 0
 Result: 0
-Iterative time: 1500
-Recursive time: 1100
+Iterative time: 1700
+Recursive time: 1000
 
 Number of terms: 1
 Result: 1
 Iterative time: 300
-Recursive time: 300
+Recursive time: 100
 
 Number of terms: 2
 Result: 1
 Iterative time: 500
-Recursive time: 400
+Recursive time: 300
 
 Number of terms: 3
 Result: 2
 Iterative time: 200
-Recursive time: 500
+Recursive time: 300
 
 Number of terms: 4
 Result: 3
-Iterative time: 300
-Recursive time: 600
+Iterative time: 200
+Recursive time: 500
 
 Number of terms: 5
 Result: 5
 Iterative time: 200
-Recursive time: 800
+Recursive time: 700
 
 Number of terms: 6
 Result: 8
 Iterative time: 300
-Recursive time: 1100
+Recursive time: 1000
 
 Number of terms: 7
 Result: 13
 Iterative time: 300
-Recursive time: 1700
+Recursive time: 1600
 
 Number of terms: 8
 Result: 21
@@ -48,59 +48,59 @@ Recursive time: 3100
 Number of terms: 9
 Result: 34
 Iterative time: 300
-Recursive time: 8300
+Recursive time: 8200
 
 Number of terms: 10
 Result: 55
-Iterative time: 300
+Iterative time: 200
 Recursive time: 7100
 
 Number of terms: 11
 Result: 89
 Iterative time: 400
-Recursive time: 15000
+Recursive time: 14100
 
 Number of terms: 12
 Result: 144
-Iterative time: 400
-Recursive time: 17600
+Iterative time: 300
+Recursive time: 17400
 
 Number of terms: 13
 Result: 233
-Iterative time: 400
-Recursive time: 27800
+Iterative time: 500
+Recursive time: 48800
 
 Number of terms: 14
 Result: 377
-Iterative time: 400
-Recursive time: 43500
+Iterative time: 600
+Recursive time: 68300
 
 Number of terms: 15
 Result: 610
-Iterative time: 400
-Recursive time: 14100
+Iterative time: 500
+Recursive time: 112600
 
 Number of terms: 16
 Result: 987
-Iterative time: 400
-Recursive time: 28100
+Iterative time: 600
+Recursive time: 34300
 
 Number of terms: 17
 Result: 1597
-Iterative time: 400
-Recursive time: 15800
+Iterative time: 900
+Recursive time: 25100
 
 Number of terms: 18
 Result: 2584
 Iterative time: 500
-Recursive time: 23400
+Recursive time: 29600
 
 Number of terms: 19
 Result: 4181
-Iterative time: 500
-Recursive time: 37900
+Iterative time: 400
+Recursive time: 44500
 
 Number of terms: 20
 Result: 6765
 Iterative time: 500
-Recursive time: 61200
+Recursive time: 70400
