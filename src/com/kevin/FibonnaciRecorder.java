@@ -18,14 +18,14 @@ import org.jfree.chart.ChartUtilities;
 
 public class FibonnaciRecorder {
 
-	static final int terms = 20;
+	static final int terms = 30;
 	
 	// First 10 terms of Fibonnaci sequence:
 
 	/**
 	 * The main method stores data from the Fibonacci methods as well as the times needed to execute them.
 	 * It also will store the actual Fibonacci sequence to pass to the
-	 * {@link #recordData(ArrayList, ArrayList, ArrayList)} method.
+	 *  {@link #recordData(ArrayList, ArrayList, ArrayList)} method.
 	 */
 	public static void main(String[] args) {
 
@@ -41,13 +41,13 @@ public class FibonnaciRecorder {
 			fibonacciIterative(i);
 			endTime = System.nanoTime();	
 			iterativeTimes.add(endTime - startTime);
-			// System.out.println("Iterative result for " + i + " terms: "  + endTime - startTime);
+			// System.out.println("Iterative result for " + i + " terms: "  + (endTime - startTime));
 	
 			startTime = System.nanoTime();
-			fibonacciRecursive(i);
+			fibonacciRecursive(i, new int[i + 1]);
 			endTime = System.nanoTime();
 			recursiveTimes.add(endTime - startTime);
-			// System.out.println("Recursive result for " + i + " terms: "  + endTime - startTime);
+			// System.out.println("Recursive result for " + i + " terms: "  + (endTime - startTime));
 			
 			results.add(fibonacciIterative(i));
 			
@@ -148,12 +148,13 @@ public class FibonnaciRecorder {
 	 * @param n The number of terms to be used.
 	 * @return Returns the nth number in the sequence.
 	 */
-	public static int fibonacciRecursive(int n) {
+	public static int fibonacciRecursive(int n, int[] memo) {
 
-		if (n == 0 || n == 1)
+		if (n <= 0 || n == 1)
 			return n;
-		return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
-
+		else if (memo[n] > -1)
+			memo[n] = fibonacciRecursive(n - 1, memo) + fibonacciRecursive(n - 2, memo);
+		return memo[n];
 	}
 
 }
