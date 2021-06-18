@@ -151,9 +151,10 @@ public class FibonnaciRecorder {
 	public static int fibonacciRecursive(int n, int[] memo) {
 
 		if (n <= 0 || n == 1)
-			return n;
-		else if (memo[n] > -1)
-			memo[n] = fibonacciRecursive(n - 1, memo) + fibonacciRecursive(n - 2, memo);
+			return  n;
+		if (memo[n] != 0)
+			return memo[n];
+		memo[n] = fibonacciRecursive(n - 1, memo) + fibonacciRecursive(n - 2, memo);
 		return memo[n];
 	}
 
